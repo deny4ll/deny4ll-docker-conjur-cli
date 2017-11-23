@@ -23,10 +23,7 @@ RUN \
   wget https://github.com/cyberark/conjur-cli/releases/download/v5.4.0/conjur_5.4.0-1_amd64.deb && \
   dpkg -i conjur_5.4.0-1_amd64.deb
 
-# Define working directory.
 
-ADD conjur-conjurpoc.pem /root
-ADD conjurrc /root/.conjurrc
 
 # Define default command.
 CMD ["/bin/bash"]
