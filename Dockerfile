@@ -1,8 +1,9 @@
 #
 # Conjur-Cli Dockerfile
 #
-# https://github.com/dockerfile/ruby
+# https://github.com/deny4ll/deny4ll-docker-conjur-cli
 #
+# 
 
 # Pull base image.
 FROM ubuntu:latest
@@ -23,7 +24,9 @@ RUN \
   dpkg -i conjur_5.4.0-1_amd64.deb
 
 # Define working directory.
-WORKDIR /data
+
+ADD conjur-conjurpoc.pem /root
+
 
 # Define default command.
 CMD ["/bin/bash"]
