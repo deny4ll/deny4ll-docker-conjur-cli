@@ -26,7 +26,7 @@ RUN \
 # Define working directory.
 
 ADD conjur-conjurpoc.pem /root
-
+ADD conjurrc /root/.conjurrc
 
 # Define default command.
 CMD ["/bin/bash"]
