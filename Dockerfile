@@ -25,5 +25,7 @@ RUN \
 
 RUN rm conjur_5.4.0-1_amd64.deb 
 
+RUN apt-get update && apt-get install openssh-client -y
+
 # Define default command.
 CMD ["/bin/bash"]
